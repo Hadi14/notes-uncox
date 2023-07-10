@@ -2,6 +2,7 @@
 class Db
 {
     private $con;
+    /*************************************************************************** */
     public function __construct($options = null)
     {
         if ($options) {
@@ -28,7 +29,7 @@ class Db
     {
         return  $this->con;
     }
-
+    /*************************************************************************** */
     public function first($sql)
     {
         $result = $this->con->query($sql);
@@ -37,6 +38,7 @@ class Db
         }
         return $result[0];
     }
+    /*************************************************************************** */
     public function doquery($sql)
     {
         $result = $this->con->query($sql);
@@ -50,6 +52,7 @@ class Db
             return null;
         }
     }
+    /*************************************************************************** */
     public function close()
     {
         $this->con->close();
