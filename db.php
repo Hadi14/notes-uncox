@@ -51,6 +51,7 @@ class Db
 
             return null;
         }
+        return $records;
     }
     /*************************************************************************** */
     public function close()
