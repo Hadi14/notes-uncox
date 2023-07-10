@@ -45,14 +45,6 @@ class Db
             while ($row = $result->fetch_assoc()) {
                 $records[] = $row;
             }
-            // echo "<pre>" . print_r($result) . "<pre>";
-            var_dump($result);
-            echo "<br>";
-            print_r($result);
-            echo "<br>";
-            $out = print_r($records, true);
-            echo "<pre>$out <pre>";
-            // return $records;
         } else {
 
             return null;
