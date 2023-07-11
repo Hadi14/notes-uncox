@@ -2,8 +2,20 @@
 class Db
 {
     private $con;
+    private static $dbcon;
     /*************************************************************************** */
-    public function __construct($options = null)
+    public static function getInstance($options = null)
+    {
+        if (self::$dbcon == null) {
+            self::$dbcon = new Db($options);
+            echo "New Instance<br>";
+        } else {
+            echo "Reused Instance<br>";
+        }
+        return self::$dbcon;
+    }
+    /*************************************************************************** */
+    private function __construct($options)
     {
         if ($options) {
             $servername = $options['host'];
@@ -22,9 +34,9 @@ class Db
             echo "Connection failed: " . $this->con->connect_error;
             exit;
         }
-        // echo "test <br>";
-        // $this->con->query("SET NAMES 'utf8'");
+        $this->con->query("SET NAMES 'utf8'");
     }
+    /*************************************************************************** */
     public function connection($sql)
     {
         return  $this->con;
@@ -32,7 +44,7 @@ class Db
     /*************************************************************************** */
     public function first($sql)
     {
-        $result = $this->con->query($sql);
+        $result = $this->doquery($sql);
         if ($result == null) {
             return null;
         }
