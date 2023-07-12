@@ -1,8 +1,7 @@
 <?
 
-require_once("db.php");
-require_once("config.php");
-require_once("common.php");
+require_once("main.php");
+
 // $db = new Db();
 $db = Db::getInstance();
 $db = Db::getInstance();

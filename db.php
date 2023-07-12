@@ -8,9 +8,7 @@ class Db
     {
         if (self::$dbcon == null) {
             self::$dbcon = new Db($options);
-            echo "New Instance<br>";
-        } else {
-            echo "Reused Instance<br>";
+            // echo "New Instance<br>";
         }
         return self::$dbcon;
     }
