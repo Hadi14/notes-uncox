@@ -64,6 +64,12 @@ class Db
         return $records;
     }
     /*************************************************************************** */
+    public function insert($sql)
+    {
+        $id = $this->con->query($sql);
+        return $id;
+    }
+    /*************************************************************************** */
     public function close()
     {
         $this->con->close();

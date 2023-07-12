@@ -9,14 +9,14 @@
 </head>
 
 <body>
-    <form action="login-check.php" method="post">
+    <form action="register-check.php" method="post">
         <!--   con = Container  for items in the form-->
         <div class="con">
             <!--     Start  header Content  -->
             <header class="head-form">
-                <h2>ورود</h2>
+                <h2>ثبت نام</h2>
                 <!--     A welcome message or an explanation of the login form -->
-                <p>ورود با نام کاربری و کلمه عبور</p>
+                <p>برای ثبت نام اطلاعات زیر را وارد کنید </p>
             </header>
             <!--     End  header Content  -->
             <br>
@@ -33,21 +33,14 @@
                     <i class="fa fa-key"></i>
                 </span>
                 <!--   Password Input-->
-                <input name="pass" class="form-input" type="password" placeholder="Password" id="pwd" name="password" required>
+                <input name="pass1" class="form-input" type="password" placeholder="Password" id="pwd" name="password">
                 <br>
-                <button class="log-in"> ورود </button>
+                <input name="pass2" class="form-input" type="password" placeholder="Confirm Password" id="pwd" name="password">
+                <br>
+                <button class="log-in"> ثبت نام </button>
             </div>
             <!--   other buttons -->
-            <div class="other">
-                <!--      Forgot Password button-->
-                <button class="btn submits frgt-pass">فراموشی رمز عبور</button>
-                <!--     Sign Up button -->
-                <button class="btn submits sign-up">ثبت نام
-                    <!--         Sign Up font icon -->
-                    <i class="fa fa-user-plus" aria-hidden="true"></i>
-                </button>
-                <!--      End Other the Division -->
-            </div>
+
             <!--   End Conrainer  -->
         </div>
         <!-- End Form -->
