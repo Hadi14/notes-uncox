@@ -11,7 +11,7 @@
 <body>
     <div class="container tac">
         <img src="images/success.png" alt="" width="200px">
-        <h3>تبریک شما موفق شدید</h3>
+        <h3><?= $message ?></h3>
     </div>
 </body>
 

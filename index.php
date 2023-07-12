@@ -1,7 +1,10 @@
 <?
 
 require_once("main.php");
-
+$name = $_SESSION['seuname'];
+echo $name . "خوش آمدید";
+echo "<br>";
+echo  "برای خروج " . "<a href=logout.php> اینجا </a>" . "کلیک کنید ";
 // $db = new Db();
 $db = Db::getInstance();
 $db = Db::getInstance();

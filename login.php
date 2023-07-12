@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <?
+    require_once("main.php");
+    if (isset($_SESSION['seuname'])) {
+        header("Location: index.php");
+    }
+    ?>
     <form action="login-check.php" method="post">
         <!--   con = Container  for items in the form-->
         <div class="con">

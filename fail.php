@@ -11,7 +11,7 @@
 <body>
     <div class="cont tac">
         <img src="images/fail.png" alt="" width="200px">
-        <h3>شما با خطا مواجهه شدید</h3>
+        <h3><?= $message ?></h3>
     </div>
 </body>
 
