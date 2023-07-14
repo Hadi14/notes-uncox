@@ -22,7 +22,9 @@ if ($records) {
     exit;
 }
 
-$records = $db->insert("insert into x_users (username,pass) values ('$user','$pass1')");
+$hashedpass = md5($pass1);
+
+$records = $db->insert("insert into x_users (username,pass) values ('$user','$hashedpass')");
 if (!$records) {
     // header("Location: fail.php");
     $message = "Insert Error";

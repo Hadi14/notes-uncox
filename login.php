@@ -39,7 +39,7 @@
                     <i class="fa fa-key"></i>
                 </span>
                 <!--   Password Input-->
-                <input name="pass" class="form-input" type="password" placeholder="Password" id="pwd" name="password" required>
+                <input name="pass" class="form-input" type="password" placeholder="Password" id="pwd" required>
                 <br>
                 <button class="log-in"> ورود </button>
             </div>

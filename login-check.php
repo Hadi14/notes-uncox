@@ -7,7 +7,6 @@ $user = $_POST['user'];
 $pass = $_POST['pass'];
 $records = $db->doquery("select  * from x_users where username='$user' and pass='$pass'");
 if (!$records) {
-    // header("Location: fail.php");
     $message = "login Failed";
     require_once("fail.php");
     exit;
@@ -16,5 +15,4 @@ if (!$records) {
     require_once("success.php");
     $_SESSION['seuname'] = $user;
     exit;
-    // header("Location: success.php");
 }

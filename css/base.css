@@ -1,3 +1,13 @@
 .tac {
     text-align: center;
 }
+
+.header {
+    background-color: rgb(190, 174, 153);
+    direction: rtl;
+    padding: 10px 20px;
+}
+
+body {
+    margin: 0;
+}
