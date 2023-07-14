@@ -7,6 +7,10 @@ $user = $_POST['user'];
 $pass = $_POST['pass'];
 $records = $db->doquery("select  * from x_users where username='$user' and pass='$pass'");
 if (!$records) {
+
+    if ('123' == md5('123')) {
+        echo "<br> Matched";
+    }
     $message = "login Failed";
     require_once("fail.php");
     exit;
