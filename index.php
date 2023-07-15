@@ -52,7 +52,8 @@
             }
             ?>
 
-        </table>
+        </table><br>
+        <button>درج نت</button>
     <?
     } else {
     ?>
