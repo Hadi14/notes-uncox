@@ -66,6 +66,12 @@ class Db
     /*************************************************************************** */
     public function insert($sql)
     {
+        $rowupdate = $this->con->query($sql);
+        return $rowupdate;
+    }
+    /*************************************************************************** */
+    public function update($sql)
+    {
         $id = $this->con->query($sql);
         return $id;
     }
