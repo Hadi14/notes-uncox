@@ -10,4 +10,5 @@ $db->update("update x_note set noteTitle='$newtitle' where noteID='$un'");
 // echo $un;
 // echo $_GET['id'];
 
+
 header("Location: index.php");
