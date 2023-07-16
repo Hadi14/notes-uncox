@@ -53,7 +53,7 @@
             ?>
 
         </table><br>
-        <button>درج نت</button>
+        <a href="insertNote.php">درج نت</a>
     <?
     } else {
     ?>
