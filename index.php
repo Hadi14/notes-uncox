@@ -36,6 +36,7 @@
                 <th>متن نت</th>
                 <th>زمان نت</th>
                 <th>ویرایش</th>
+                <th>حذف</th>
             </tr>
             <? foreach ($result as $row) {
                 $t = $row['noteTitle'];
@@ -47,6 +48,7 @@
                     <td><?= $row['noteText'] ?></td>
                     <td><?= $row['noteTime'] ?></td>
                     <td><a href="edit.php?id=<?= $row['noteID'] ?>&title=<?= $t ?>"><i class="bi bi-pencil-square"></i></a></td>
+                    <td><a href="deleteNote.php?id=<?= $row['noteID'] ?>"><i class="bi bi-calendar-x"></i></a></td>
                 </tr>
             <?
             }
